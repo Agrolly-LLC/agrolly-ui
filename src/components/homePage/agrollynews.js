@@ -31,19 +31,19 @@ export default class AgrollyNews extends Component {
   }
 
   NewsList() {
-    let filterCountry = this.state.news.filter((countries) => {
-      // console.log(countries.country.toLowerCase().includes(this.state.search.toLowerCase() != -1))
-      return countries.country
-        .toLowerCase()
-        .includes(this.state.search.toLowerCase());
-    });
-    return filterCountry.slice(0, 4).map((currentnews) => {
-      if (currentnews.news_id !== null) {
-        return <Card key={currentnews.news_id} news={currentnews} />;
-      } else {
-        return null;
-      }
-    });
+    // let filterCountry = this.state.news.filter((countries) => {
+    //   // console.log(countries.country.toLowerCase().includes(this.state.search.toLowerCase() != -1))
+    //   return countries.country
+    //     .toLowerCase()
+    //     .includes(this.state.search.toLowerCase());
+    // });
+    // return filterCountry.slice(0, 4).map((currentnews) => {
+    //   if (currentnews.news_id !== null) {
+    //     return <Card key={currentnews.news_id} news={currentnews} />;
+    //   } else {
+    //     return null;
+    //   }
+    // });
   }
 
   render() {
