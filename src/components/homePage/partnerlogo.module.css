@@ -1,0 +1,33 @@
+.site {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 1fr;
+  grid-gap: 1em;
+}
+
+.partnertext {
+  text-align: right;
+  margin-right: 10px;
+  text-decoration: underline;
+  margin-bottom: auto;
+  margin-top: auto;
+}
+
+.partnerImage {
+  margin: 10px;
+  height: 110px;
+}
+
+@media screen and (max-width: 640px) {
+  .site {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 5fr;
+    grid-gap: 1em;
+    text-align: center;
+  }
+
+  .partnertext {
+    text-align: center;
+    margin-right: 0px;
+  }
+}

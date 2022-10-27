@@ -1,0 +1,17 @@
+{
+  "submit": {
+    "1": "submit"
+  },
+  "edit": {
+    "1": "edit"
+  },
+  "about": {
+    "1": "about"
+  },
+  "login": {
+    "1": "login"
+  },
+  "home": {
+    "1": "home"
+  }
+}

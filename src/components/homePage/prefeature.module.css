@@ -1,0 +1,103 @@
+/* @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+ @import url(https://fonts.googleapis.com/css?family=Montserrat:700); */
+
+.fetureContener {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.fetureContener p {
+  font-size: 15px;
+}
+
+.featureExplainContent {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-template-rows: 1fr;
+  z-index: -6;
+  background-image: url("../../Image/background/backgroundcrop.jpg");
+}
+
+.featureDisplayNone {
+  display: none;
+}
+
+.featureimageContener {
+  text-align: center;
+  padding: 10%;
+}
+
+.featureContent {
+  padding-right: 100px;
+  padding-top: 10%;
+  color: white;
+}
+
+/* button area  */
+.featureButtonContainer {
+  display: grid;
+  grid-template-rows: 3;
+}
+
+.featureButtonContainer button {
+  border: none;
+  background-color: #4b5453;
+  color: white;
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+  font-size: 20px;
+}
+
+.featureButtonContainer button:hover {
+  top: -5px;
+}
+
+.featureButtonContainer button {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  .fetureContener {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .fetureContener h2 {
+    padding-left: 10px;
+  }
+
+  .fetureContener p {
+    padding-left: 10px;
+  }
+
+  .featureExplainContent {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    z-index: -6;
+    background-image: url("../../Image/background/backgroundcrop.jpg");
+    /* https://www.pexels.com/photo/photo-of-field-during-daytime-3126574/ */
+  }
+
+  .featureimageContener {
+    padding: 2%;
+  }
+
+  .featureimageContener img {
+    width: 200px;
+  }
+
+  .featureContent {
+    padding-right: 10px;
+    padding-top: 10%;
+    color: white;
+  }
+
+  .featureButtonContainer button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}

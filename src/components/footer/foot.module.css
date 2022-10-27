@@ -1,0 +1,36 @@
+.footerBG {
+  background-color: #1d8179;
+  padding: 5% 15%;
+  bottom: 0;
+  width: 100%;
+}
+
+.site {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.site h5 {
+  color: #baf2b6;
+}
+
+.site a {
+  color: white;
+  text-decoration: none;
+}
+
+.site a:hover {
+  color: #baf2b6;
+}
+
+.iconlink {
+  padding: 2px;
+}
+
+@media screen and (max-width: 640px) {
+  .site {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+}

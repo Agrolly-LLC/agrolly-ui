@@ -1,0 +1,21 @@
+.DisclaimerTitle {
+  background-color: #1d8179;
+  color: white;
+  padding-top: 10%;
+  padding-left: 5%;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1.5em;
+  margin: 3% 5%;
+}
+
+@media screen and (max-width: 640px) {
+  .content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+}

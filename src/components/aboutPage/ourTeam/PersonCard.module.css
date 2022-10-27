@@ -1,0 +1,61 @@
+.personContainer {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+}
+
+.personImg {
+  text-align: end;
+}
+
+.projectImage {
+  width: 200px;
+  height: 200px;
+  border-radius: 50px;
+  padding: 10px;
+}
+
+.personaContain {
+  padding-top: 15px;
+}
+
+.nameText {
+  font-weight: bold;
+  color: green;
+  font-size: 20px;
+  margin-bottom: 0;
+  padding-left: 0%;
+}
+.titleText {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+
+.infoText {
+  font-size: 13px;
+  color: grey;
+  padding-right: 10%;
+  margin-bottom: 0%;
+}
+
+@media screen and (max-width: 640px) {
+  .personContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .personImg {
+    text-align: center;
+  }
+
+  .projectImage {
+    padding: 0px;
+  }
+
+  .infoText {
+    color: grey;
+    padding-right: 5%;
+  }
+}

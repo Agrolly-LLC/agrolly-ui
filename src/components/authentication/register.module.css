@@ -1,0 +1,32 @@
+.backgroundRegister {
+  background-image: url(../../Image/background/register.png);
+  height: 100%;
+  margin: 0;
+  padding: 5%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.formcontainer {
+  max-width: 50%;
+  margin: 3% auto;
+  padding: 4%;
+  border-style: solid;
+  border-radius: 25px;
+  border-color: rgb(160, 160, 160, 0.6);
+  background-color: rgb(160, 160, 160, 0.6);
+  text-align: center;
+}
+
+.infoButton {
+  border: none;
+  background-color: Transparent;
+  color: blue;
+}
+
+@media screen and (max-width: 640px) {
+  .formcontainer {
+    max-width: 95%;
+    margin: 10% auto;
+  }
+}

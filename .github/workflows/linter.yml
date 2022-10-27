@@ -1,0 +1,29 @@
+# Linter checks the following when a contributor pushes new changes to the main branch;
+# 1. Install Node dependencies and builds the project
+# 2. Executes dockerfilelint to analyze Dockerfile for any mistakes
+# 3. Executes prettier to formats the code keeping it neat and consistent.
+name: linter
+
+on:
+  # Execute on every push to any branch
+  push:
+    branches:
+      - "**"
+  # Execute on every pull request to the main branch
+  pull_request_target:
+    branches:
+      - main
+
+jobs:
+  linter:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set up node
+        uses: actions/setup-node@v1
+      - run: npm install --production
+      - run: npm install -g dockerfilelint prettier@2.3.0
+      - run: dockerfilelint ./Dockerfile
+      - run: prettier --check .
+      - run: npm run build

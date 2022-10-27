@@ -1,0 +1,54 @@
+.Partners {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0%;
+}
+.titleContent {
+  text-align: center;
+  margin-top: 5%;
+}
+
+/*--------------------------------------------------------------
+Partner Cards:
+--------------------------------------------------------------*/
+
+.PartnerImage {
+  height: 150px;
+}
+
+.PartnerContainer {
+  width: 640px;
+  margin: 4%;
+}
+
+.LinkContainer {
+  width: 100%;
+  text-align: center;
+}
+
+.PertnerContent {
+  margin: 2% 5%;
+}
+
+.PartnerContainer h4 {
+  text-align: center;
+  font-weight: 700;
+}
+
+.PartnerContainer p {
+  font-size: 20px;
+}
+
+/*--------------------------------------------------------------
+CSS Grid layout for wider screens, when browser supports grid:
+--------------------------------------------------------------*/
+
+@supports (grid-area: auto) {
+  @media screen and (max-width: 640px) {
+    .Partners {
+      display: grid;
+      grid-template-columns: 1fr;
+      margin: 0%;
+    }
+  }
+}
