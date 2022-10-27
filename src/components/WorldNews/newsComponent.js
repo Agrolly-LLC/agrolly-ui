@@ -32,23 +32,23 @@ export default class NewsComponent extends Component {
   }
 
   NewsList() {
-    let filterCountry = this.state.news.filter((countries) => {
-      console.log(
-        countries.country
-          .toLowerCase()
-          .includes(this.state.search.toLowerCase() !== -1)
-      );
-      return countries.country
-        .toLowerCase()
-        .includes(this.state.search.toLowerCase());
-    });
-    return filterCountry.map((currentnews) => {
-      if (currentnews.news_id !== null) {
-        return <NewsCards key={currentnews.news_id} news={currentnews} />;
-      } else {
-        return null;
-      }
-    });
+    // let filterCountry = this.state.news.filter((countries) => {
+    //   console.log(
+    //     countries.country
+    //       .toLowerCase()
+    //       .includes(this.state.search.toLowerCase() !== -1)
+    //   );
+    //   return countries.country
+    //     .toLowerCase()
+    //     .includes(this.state.search.toLowerCase());
+    // });
+    // return filterCountry.map((currentnews) => {
+    //   if (currentnews.news_id !== null) {
+    //     return <NewsCards key={currentnews.news_id} news={currentnews} />;
+    //   } else {
+    //     return null;
+    //   }
+    // });
   }
 
   render() {
