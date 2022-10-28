@@ -4,6 +4,7 @@ import style from "./homepage.module.css";
 import Footer from "../footer/footer";
 import Feature from "./prefeature";
 import CountryButoon from "./countrybutton";
+import HomepageWorldNews from "./homepageWorldNews";
 import News from "./agrollynews";
 import logo from "../../Image/Agrolly/Agrolly logo.png";
 
@@ -72,10 +73,11 @@ class homePage extends Component {
         </section>
 
         <section className={style.homepagenews}>
-          {/* <h3>{t('world-news.1')}</h3>
-                    <HomepageWorldNews /> */}
+          {/* <h3>{t('world-news.1')}</h3> */}
           <h3>{t("agrolly-news.1")}</h3>
-          <News />
+                    <HomepageWorldNews />
+          
+          {/* <News /> */}
         </section>
 
         <section id="feature">

@@ -1,80 +1,61 @@
-import React, { Component } from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
 import NewsCards from "./newsCards";
 import style from "./newsCards.module.css";
 import { config } from "../../Config";
 
-export default class NewsComponent extends Component {
-  constructor(props) {
-    super(props);
-    this.countrySearch = this.countrySearch.bind(this);
-    this.state = {
-      news: [],
-      search: "",
-    };
-  }
+const NewsComponent = () => {
+  const [newsArray, setNewsArray] = useState([]);
+  const [search, setSearch] = useState("");
 
-  componentDidMount() {
+  const getAllNews = () => {
     axios
-      .get(config.url.API_URL + "/news/allnews")
+      .get(config.url.API_URL + "/news")
       .then((response) => {
-        // console.log(response.data)
+        console.log(response.data);
         const news = response.data;
-        this.setState({ news: news });
+        setNewsArray(news);
       })
       .catch((error) => {
         console.log(error);
       });
-  }
+  };
 
-  countrySearch(e) {
-    this.setState({ search: e.target.value });
-  }
+  useEffect(() => {
+    getAllNews();
+  }, []);
 
-  NewsList() {
-    // let filterCountry = this.state.news.filter((countries) => {
-    //   console.log(
-    //     countries.country
-    //       .toLowerCase()
-    //       .includes(this.state.search.toLowerCase() !== -1)
-    //   );
-    //   return countries.country
-    //     .toLowerCase()
-    //     .includes(this.state.search.toLowerCase());
-    // });
-    // return filterCountry.map((currentnews) => {
-    //   if (currentnews.news_id !== null) {
-    //     return <NewsCards key={currentnews.news_id} news={currentnews} />;
-    //   } else {
-    //     return null;
-    //   }
-    // });
-  }
-
-  render() {
-    return (
-      <div>
-        <section className={style.countryfilter}>
-          <label htmlFor="Country">Country:</label>
-          <select
-            name="Country"
-            id="Country"
-            value={this.state.search}
-            onChange={this.countrySearch}
-          >
-            <option defaultValue value="">
-              All
-            </option>
-            <option value="Mongolia">Mongolia</option>
-            <option value="Brazil">Brazil</option>
-            <option value="India">India</option>
-            <option value="Taiwan">Taiwan</option>
-            <option value="United State">United State</option>
-            <option value="Agrolly">Agrolly</option>
-          </select>
-        </section>
-        <div className={style.site}>{this.NewsList()}</div>
+  return (
+    <div>
+      {/* <section className={style.countryfilter}> */}
+        {/* <label htmlFor="Country">Country:</label>
+        <select
+          name="Country"
+          id="Country"
+          value={search}
+          onChange={(e) => {
+            setSearch(e.target.value);
+          }}
+        >
+          <option defaultValue value="">
+            All
+          </option>
+          <option value="">Global</option>
+              <option value="Agrolly">Agrolly</option>
+              <option value="Brazil">Brazil</option>
+              <option value="India">India</option>
+              <option value="Mongolia">Mongolia</option>
+              <option value="Taiwan">Taiwan</option>
+              <option value="United States">United States</option>
+        </select> */}
+      {/* </section> */}
+      <div className={style.site}>
+        {newsArray.map((news) => {
+          return <NewsCards key={news.id} news={news} />;
+        })}
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
+
+export default NewsComponent;

@@ -8,9 +8,9 @@ function NewsPreview(props) {
       <div>
         <Link
           className={style.editButton}
-          to={"/happened/" + props.news.news_id}
+          to={"/happened/" + props.news.id}
         >
-          <img className={style.newsImage} src={props.news.imageURL} alt="" />
+          <img className={style.newsImage} src={props.news.image} alt="" />
           <h4 className={style.titleText}>{props.news.title}</h4>
         </Link>
       </div>

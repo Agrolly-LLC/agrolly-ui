@@ -4,6 +4,8 @@ import axios from "axios";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { config } from "../../Config";
+import { CKEditor } from '@ckeditor/ckeditor5-react';
+import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 
 export default class InputNews extends Component {
   constructor(props) {
@@ -20,11 +22,12 @@ export default class InputNews extends Component {
 
     this.state = {
       title: "",
-      imageURL: "",
-      country: "",
+      image: "",
+      location: "",
       city: "",
       content: "",
       reference: "",
+      author: "",
       date: "",
     };
   }
@@ -71,21 +74,20 @@ export default class InputNews extends Component {
 
     const newscreate = {
       title: this.state.title,
-      imageURL: this.state.imageURL,
-      country: this.state.country,
-      city: this.state.city,
       content: this.state.content,
+      location: this.state.location,
+      image: this.state.imageURL,
       reference: this.state.reference,
-      date: this.state.date,
+      date_happen: this.state.date,
     };
 
     console.log(newscreate);
 
     axios
-      .post(config.url.API_URL + "/news/newscreate", newscreate)
+      .post(config.url.API_URL + "/news", newscreate)
       .then((response) => {
         console.log("create successfully ");
-        // window.location = "/user/reservation"
+        window.location = "/news"
       })
       .catch((err) => {
         console.log(err.response.data.error);
@@ -141,12 +143,14 @@ export default class InputNews extends Component {
             <label className="input-group-text" htmlFor="inputGroupSelect01">
               Country
             </label>
-            <select className="form-select" id="inputGroupSelect01">
-              <option value="Mongolia">Mongolia</option>
+            <select className="form-control" id="inputGroupSelect01">
+              <option value="">Global</option>
+              <option value="Agrolly">Agrolly</option>
               <option value="Brazil">Brazil</option>
               <option value="India">India</option>
+              <option value="Mongolia">Mongolia</option>
               <option value="Taiwan">Taiwan</option>
-              <option value="Agrolly">Agrolly</option>
+              <option value="United States">United States</option>
             </select>
           </div>
           <div className="input-group mb-3">
@@ -172,6 +176,17 @@ export default class InputNews extends Component {
               onChange={this.onChangeContent}
             ></textarea>
           </div>
+
+          <CKEditor
+            editor={ClassicEditor}
+            data={this.state.content}
+            onChange={(event, editor) => {
+              const data = editor.getData();
+                this.setState({
+                  content: data,
+                });
+            }}
+          />
 
           <div>
             <label style={{ display: "block" }}>News post date</label>
