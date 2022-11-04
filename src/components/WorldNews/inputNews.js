@@ -166,7 +166,7 @@ export default class InputNews extends Component {
             />
           </div>
 
-          <div className="form-floating">
+          {/* <div className="form-floating">
             <label htmlFor="floatingTextarea">News Content</label>
             <textarea
               className="form-control"
@@ -175,7 +175,7 @@ export default class InputNews extends Component {
               style={{ height: "100px" }}
               onChange={this.onChangeContent}
             ></textarea>
-          </div>
+          </div> */}
 
           <CKEditor
             editor={ClassicEditor}
