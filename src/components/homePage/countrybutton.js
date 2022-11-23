@@ -10,15 +10,11 @@ function countryButton(props) {
   return (
     <div className={style.countryContener}>
       <div className={style.countryLine}>
-        <CountryCard
-          image={Mongolia}
-          name={"Mongolia"}
-          link={"https://agrolly.mn/"}
-        />
+      
         <CountryCard
           image={Brazil}
           name={"Brazil"}
-          link={"http://agrolly.br"}
+          link={"https://agrolly.com.br/user/login"}
         />
         <CountryCard
           image={India}
@@ -29,6 +25,11 @@ function countryButton(props) {
           image={Taiwan}
           name={"Taiwan"}
           link={"https://agrollytaiwan.com"}
+        />
+          <CountryCard
+          image={Mongolia}
+          name={"Mongolia"}
+          link={"https://agrolly.mn/"}
         />
       </div>
     </div>

@@ -1,0 +1,76 @@
+.agrCreditContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin: 5%;
+}
+
+.agrCreditContent{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.creditImage{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.creditImage img{
+    width: 300px;
+}
+
+.trymebtn{
+    padding: 12px 20px;
+    margin: 10px 3px;
+    border-radius: 20px;
+    background-color: #1d8179;
+    color:  white;
+    border-width: thick;
+    border-color: white;
+}
+
+.talktousbtn{
+    padding: 12px 20px;
+    margin: 10px 5px;
+    border-radius: 20px;
+    background-color: gray;
+    border-width: thick;
+    color: white;
+    border-color: white;
+}
+
+@media screen and (max-width: 1000px) {
+    .agrCreditContainer{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        margin: 0%;
+    }
+  
+    .agrCreditContent{
+        grid-row: 2;
+        grid-column: 1;
+    }
+
+    .creditImage{
+        grid-row: 1;
+        grid-column: 1;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+}
+
+
+@media screen and (max-width: 630px) {
+    .creditImage img{
+        width: 250px;
+    }
+    .agrCreditContent h2{
+        font-size: 25px;
+    }
+    .agrCreditContent p{
+        text-align: justify;
+    }
+}

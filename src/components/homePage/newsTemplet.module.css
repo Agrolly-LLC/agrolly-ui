@@ -3,6 +3,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
+
 .newsCard {
   margin: 0.5em;
 }
@@ -26,9 +27,23 @@
 }
 
 .titleText {
-  width: 80%;
   font-size: 20px;
   font-style: oblique;
+}
+
+
+.newsTitle{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 1000px) {
+  .content{
+    grid-template-columns: 1fr 1fr;
+  }
+
+
 }
 
 @media screen and (max-width: 640px) {
@@ -43,4 +58,9 @@
     grid-template-rows: 1fr;
     text-align: center;
   }
+
+  .newsImage {
+    width: 350px; 
+  }
 }
+

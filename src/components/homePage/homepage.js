@@ -6,10 +6,13 @@ import Feature from "./prefeature";
 import CountryButoon from "./countrybutton";
 import HomepageWorldNews from "./homepageWorldNews";
 import News from "./agrollynews";
-import logo from "../../Image/Agrolly/Agrolly logo.png";
+import logo from "../../Image/Agrolly/newlogo.png";
 
 import Partnerlogo from "./partnerlogo";
 import { withTranslation } from "react-i18next";
+import AgrCredit from "./AgrCredit";
+import NumbersCard from "./NumbersCard";
+import WhatWeDo from "./WhatWeDo";
 
 class homePage extends Component {
   render() {
@@ -23,7 +26,7 @@ class homePage extends Component {
                 Helping farmers to effectively plant the right crops in the
                 right place and weather
               </h1>
-              <button
+              {/* <button
                 type="button"
                 className={`btn btn-dark btn-lg ${style.googlebtn}`}
                 onClick={(e) => {
@@ -34,7 +37,7 @@ class homePage extends Component {
               >
                 <i className="fab fa-google-play"></i>
                 {t("download.1")}
-              </button>
+              </button> */}
               <button
                 type="button"
                 className={`btn btn-dark btn-lg ${style.googlebtn}`}
@@ -57,7 +60,7 @@ class homePage extends Component {
 
         <section className={style.agrollyDescription}>
           <div style={{ textAlign: "center" }}>
-            <img src={logo} alt="agolly logo" />
+            <img style={{height:"200px"}} src={logo} alt="agolly logo" />
           </div>
           <div className={style.agrollyDescriptionContent}>
             <h1>What is Agrolly?</h1>
@@ -71,6 +74,19 @@ class homePage extends Component {
             </h3>
           </div>
         </section>
+        
+        <div>
+          <AgrCredit/>
+        </div>
+
+        <section>
+          <NumbersCard/>
+        </section>
+
+        <section>
+       
+          <WhatWeDo/>
+        </section>
 
         <section className={style.homepagenews}>
           {/* <h3>{t('world-news.1')}</h3> */}
@@ -79,6 +95,8 @@ class homePage extends Component {
           
           {/* <News /> */}
         </section>
+
+       
 
         <section id="feature">
           <Feature />

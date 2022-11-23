@@ -9,6 +9,7 @@ import Helen from "../../../Image/us/Helen.png";
 import Footer from "../../footer/footer";
 
 import PersonCard from "./PersonCard";
+import TimeLine from "../TimeLine/TimeLine";
 
 export default class OurTeam extends Component {
   render() {
@@ -70,7 +71,7 @@ export default class OurTeam extends Component {
                 "MS in Computer Science and Bachelor of Engineering in Electronics & Telecommunications, For any queries related to AGROLLY-INDIA drop an email at ajinkyadatalkar1@gmail.com"
               }
             />
-            <PersonCard
+            {/* <PersonCard
               personImg={Chimka}
               personName={"Chimka Munkhbayar"}
               personTitle={"COO"}
@@ -80,7 +81,7 @@ export default class OurTeam extends Component {
               personContent={
                 "BA in Informatics and MBA in Entrepreneurship. Fulbright scholar 2018-2020."
               }
-            />
+            /> */}
             <PersonCard
               personImg={Helen}
               personName={"Helen Tsai"}
@@ -91,7 +92,9 @@ export default class OurTeam extends Component {
               }
             />
           </div>
+        
         </section>
+        <TimeLine/>
         <Footer />
       </div>
     );

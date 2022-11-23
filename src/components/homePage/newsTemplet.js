@@ -11,7 +11,9 @@ function NewsPreview(props) {
           to={"/happened/" + props.news.id}
         >
           <img className={style.newsImage} src={props.news.image} alt="" />
-          <h4 className={style.titleText}>{props.news.title}</h4>
+          <div className={style.newsTitle}>
+             <h4 className={style.titleText}>{props.news.title}</h4>
+          </div>
         </Link>
       </div>
     </div>

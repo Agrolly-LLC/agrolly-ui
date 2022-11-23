@@ -1,0 +1,53 @@
+/* .Fourth_section_text{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #fecb66;
+    padding: 35px;
+    margin-top: 10rem;
+} */
+
+.Fourth_section_text{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  background: #fecb66;
+  padding: 35px;
+}
+.Fourth_section_text h2{
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.counter_card .counter_no{
+    font-size:3rem;
+    text-align: center;
+}
+.counter_card .counter_desc{
+    padding:0rem;
+    margin:0.7rem;
+    font-size: 1.1rem;
+}
+
+
+@media only screen and (max-width: 1000px){
+    .Fourth_section_text{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+
+    .Fourth_section_text h2{
+      margin-top: 3%;
+      margin-bottom: 3%;
+    }
+
+    .Main_work_card{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 5rem 0rem;
+      width: 100%;
+    }
+}
+
