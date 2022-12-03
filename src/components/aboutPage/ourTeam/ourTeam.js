@@ -19,7 +19,7 @@ export default class OurTeam extends Component {
           <div className={style.imageContainer}>
             <img
               className={style.ourStoryImg}
-              src="https://3kda485d4m0mmprok50zsd5m-wpengine.netdna-ssl.com/wp-content/uploads/2020/10/hero-video-bg-oct19.png"
+              src="https://dw1.s81c.com/developer-static-pages/callforcode/en/solutions/2020-solutions/images/c4c-hero-collage.jpg"
               alt=""
             />
           </div>

@@ -68,7 +68,7 @@ const TimeLine = () => {
 
       <div className={style.timeline_text}>
         <h2>Timeline</h2>
-        <p>We launched the Agrolly India application with a vision to help farmers in July 2021, and soon after we started thremendously positive response, within 6 month our app reached 3000+ downloads and is helping 1000+ active farmer to solve their problem at their finger tips</p>
+        <p>We launched the Agrolly for the aim of helping local farmer for all kind of thing, from help farmers to manage their crop, learn from other farmers, crop risk management, and many more. when we first start the idea and answer the call from call for code, we first tested in Mongolia, after 1 more year we launch at 4 different country and day by day more and more farmer join our community. with the aim we keep growing and expanding everyday</p>
       </div>
     </div>
   )

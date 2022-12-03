@@ -1,0 +1,26 @@
+.comingupImage{
+    width: 500px;
+}
+
+.impageContainer{
+    margin-left: auto;
+    margin-right: auto ;
+    width: 40%;
+    margin-top: 5%;
+}
+
+
+@media screen and (max-width: 840px) {
+    .comingupImage{
+        width: 300px;
+    }
+    
+
+    .impageContainer{
+        margin-left: auto;
+        margin-right: auto ;
+        width: 60%;
+        margin-top: 20%;
+    }
+    
+}

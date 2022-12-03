@@ -19,6 +19,7 @@ import farmerLogin from "./components/authentication/loginpage";
 import Register from "./components/authentication/registerCard";
 import OneTimePassword from "./components/authentication/oneTimePassword";
 import ForgetPassword from "./components/authentication/forgetpassword";
+import CommingUp from './components/commingup/Comeupsoon'
 
 function App() {
   const { i18n } = useTranslation();
@@ -98,7 +99,7 @@ function App() {
         <Route path="/feedback" component={feedback} />
         <Route path="/about/technology" component={technology} />
         <Route path="/disclaimer" component={disclaimer} />
-
+        <Route path="/soon" component={CommingUp} />
         <Route path="/farmer/login" exact component={farmerLogin} />
         <Route path="/register" exact component={Register} />
         <Route

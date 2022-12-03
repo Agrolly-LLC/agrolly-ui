@@ -10,14 +10,17 @@ import Rlogo from "../../../Image/icon/R_logo.png";
 import Partner from "./partnerComponent";
 import Footer from "../../footer/footer";
 import OpenSourelink from "./openSource";
+import OpenTempus from "./OpenTempus";
 
 export default class workWithUs extends Component {
   render() {
     return (
       <div>
         <section className={style.workwithusTitle}>
-          <h1>Join The Open Souce and Work with us</h1>
+          <h1>Join The Open Souce</h1>
         </section>
+
+        <OpenTempus />
 
         <OpenSourelink />
         <Partner />
