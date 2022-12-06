@@ -6,7 +6,7 @@ const AgrCredit = () => {
   let history = useHistory();
 
   const goTotry = () => {
-    history.push('/soon')
+    history.push('/agrcredit')
   };
 
   return (

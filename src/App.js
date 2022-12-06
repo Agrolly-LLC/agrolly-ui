@@ -20,6 +20,7 @@ import Register from "./components/authentication/registerCard";
 import OneTimePassword from "./components/authentication/oneTimePassword";
 import ForgetPassword from "./components/authentication/forgetpassword";
 import CommingUp from './components/commingup/Comeupsoon'
+import Agrscore from "./components/Agrscore/AgrscorePage";
 
 function App() {
   const { i18n } = useTranslation();
@@ -94,6 +95,7 @@ function App() {
         <Route path="/ourteam" component={ourteam} />
         <Route path="/workwithus" component={workWithUs} />
         <Route path="/news" component={news} />
+        <Route path="/agrcredit" component={Agrscore} />
         <Route path="/happened/:id" component={newsTemplet} />
         <Route path="/createnews" component={createnews} />
         <Route path="/feedback" component={feedback} />

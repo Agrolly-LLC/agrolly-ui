@@ -46,11 +46,11 @@ const TimeLine = () => {
 
           <li>
             <div className={style.content}>
-              <h3>Launch of the Open-Source Project with Linux</h3>
+              <h3>Launch of the Open-Source Project "OpenTempus"</h3>
               <small>Agrolly is together with Linux, IBM, Call for Code and more partners making the annual weather forecast open source. Project supervised by Agrolly and IBM. </small>
             </div>
             <div className={style.time}>
-              <h4>1Q 2023</h4>
+              <h4>4Q 2022</h4>
             </div>
           </li>
 
@@ -67,7 +67,7 @@ const TimeLine = () => {
       </div>
 
       <div className={style.timeline_text}>
-        <h2>Timeline</h2>
+        <h2>Our Journey</h2>
         <p>We launched the Agrolly for the aim of helping local farmer for all kind of thing, from help farmers to manage their crop, learn from other farmers, crop risk management, and many more. when we first start the idea and answer the call from call for code, we first tested in Mongolia, after 1 more year we launch at 4 different country and day by day more and more farmer join our community. with the aim we keep growing and expanding everyday</p>
       </div>
     </div>

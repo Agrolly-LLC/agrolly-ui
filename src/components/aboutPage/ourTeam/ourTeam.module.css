@@ -38,6 +38,22 @@
   grid-row-gap: 1em;
 }
 
+@media screen and (max-width: 1000px) {
+  .ourStory {
+    margin: 5% 5%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr;
+    grid-gap: 3%;
+    grid-area: "image story";
+  }
+
+  .memberContainer {
+    grid-template-columns: 1fr 1fr;
+    
+  }
+}
+
 @media screen and (max-width: 640px) {
   .ourStory {
     margin: 5% 5%;
@@ -50,7 +66,8 @@
 
   .memberContainer {
     grid-template-columns: 1fr;
-    grid-row: 1fr 1fr 1fr 1fr;
+    text-align: center;
+    
   }
 }
 
