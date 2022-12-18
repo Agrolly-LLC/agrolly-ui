@@ -68,7 +68,7 @@ const TimeLine = () => {
 
       <div className={style.timeline_text}>
         <h2>Our Journey</h2>
-        <p>We launched the Agrolly for the aim of helping local farmer for all kind of thing, from help farmers to manage their crop, learn from other farmers, crop risk management, and many more. when we first start the idea and answer the call from call for code, we first tested in Mongolia, after 1 more year we launch at 4 different country and day by day more and more farmer join our community. with the aim we keep growing and expanding everyday</p>
+        <p>We launched Agrolly with the aim of helping local farmers in a variety of ways, from helping farmers to manage their crop, learning from other farmers, crop risk management, and much more. When we first started the idea and answered the call from call for code, we tested it in Mongolia. After a year, we launched in 4 different countries, and day by day, more and more farmers join our community, with the aim of continuing to grow and expanding everyday.</p>
       </div>
     </div>
   )

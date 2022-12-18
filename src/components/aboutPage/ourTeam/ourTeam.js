@@ -32,22 +32,10 @@ export default class OurTeam extends Component {
           <div className={style.ourStoryText}>
             <h1>Our story</h1>
             <p>
-              “Four individuals come from four different countries with
-              different backgrounds. They met in New York City studying in the
-              same university but with different specialists but have the same
-              aim to make the world a better place, while doing their master’s
-              and initiated the idea of developing a mobile app, Agrolly.
-              Agrolly helps rural smallholder farmers fight against climate
-              change, improve their farming know farmers, and increase the
-              family income level.
+            “Four individuals come from four different countries with different backgrounds. They met in New York City while studying at the same university but with different specialists, but with the same aim of making the world a better place, while doing their master’s and initiated the idea of developing a mobile app, Agrolly. Agrolly helps rural smallholder farmers fight against climate change, improve their farming practices, and increase the family income.
             </p>
             <p>
-              2020 four of them join up and answer the call for IBM Call for
-              Code, with the faith of helping our own country fighting for
-              climate change they came up with the solution to help farmers to
-              gain planting knowledge and making risk management for the
-              planting crop. Now Agrolly is moving forward to more countries and
-              helping and improving local farmer day by day.”
+            2020, four of them join up and answer the call for IBM Call for Code, with the hope of helping our own country fight against climate change. They came up with the solution to help farmers to gain planting knowledge and risk management for the planting crop. Now, Agrolly is moving forward to more countries, helping and improving local farmers day by day.”
             </p>
           </div>
         </section>

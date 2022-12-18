@@ -66,11 +66,7 @@ class homePage extends Component {
             <h1>What is Agrolly?</h1>
             {/* <h3>Agrolly is a application supporting rural household farmers in emerging markets fight against climate change, handle the crop risk, building an extensive knowlege, and establish a wide range of networking</h3> */}
             <h3>
-              Agrolly is a solution that helps Rural household farmers to fight
-              climate change, its technology for the farmers to help them assess
-              risk, gain farming knowledge, and get to know each other using the
-              forum feature available on our platform. Agrolly provides
-              open-source solutions and local connections to the country.
+            Agrolly is a solution that helps rural household farmers to fight climate change. Its technology helps farmers to assess risk, gain farming knowledge, and get to know each other using the forum feature available on our platform. Agrolly provides open-source solutions and local connections to the country.
             </h3>
           </div>
         </section>

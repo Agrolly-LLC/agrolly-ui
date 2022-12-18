@@ -27,12 +27,12 @@ function Prefeature() {
               forecast modeling is based on Agrolly’s own algorithms leveraging
               from five years historical database, which provides tailored
               output to the farmer’s specific location on a daily basis for up
-              to one year horizon. Based on field observations in Brazil, India
-              and Mongolia, Agrolly identified that most farmers do not have
-              free access to a one-year rainfall forecast, nor have the
-              information available on their language. What makes this feature
-              unique and special about Agrolly it that it runs forecast for
-              small locations (sometimes cities lower than 5000 habitants),
+              to one year. Based on field observations in Brazil, India and
+              Mongolia, Agrolly identified that most farmers do not have free
+              access to a one-year rainfall forecast, nor have the information
+              available on their language. What makes this feature unique and
+              special about Agrolly it that it runs forecasts for small
+              locations (sometimes cities with fewer than 5000 inhabitants),
               which could be either unavailable on web-based weather forecast
               platforms or available for very short period.
             </p>
@@ -49,15 +49,15 @@ function Prefeature() {
           <div className={style.featureContent}>
             <h2>Agriculture Climate Risk</h2>
             <p>
-              It is very important for farmers to understand their location
+              It is very important for farmers to understand their location’s
               climate trends for the long run and wisely decide what to plant
               for the next few years. However, it is not an easy perspective for
-              rural farmers so Agrolly team is helping farmers by presenting
-              them the crop growing analysis based on their location-specific
-              weather data. Agrolly’s long-term weather and rainfall prediction
-              models generates the list of the crops that rural farmers should
-              try and plant in their communities based on their unique climate
-              conditions.
+              rural farmers, so the Agrolly team is helping farmers by
+              presenting them the crop growing analysis based on their
+              location-specific weather data. Agrolly’s long-term weather and
+              rainfall prediction models generate a list of crops that rural
+              farmers should try and plant in their communities based on their
+              unique climate conditions.
             </p>
           </div>
         </div>
@@ -73,8 +73,8 @@ function Prefeature() {
           <div className={style.featureContent}>
             <h2>Farmer’s Forum </h2>
             <p>
-              Forum for farmers. Have an agriculture question, but doesn’t know
-              where and who to ask? Agrolly provides a communication platform
+              Forum for farmers. Have an agricultural question, but don’t know
+              where or who to ask? Agrolly provides a communication platform
               forum based on the farmer’s location, where farmers, experts,
               students and companies can help you. Agrolly aims with this module
               to increase the interaction of the farming community, leveraging
